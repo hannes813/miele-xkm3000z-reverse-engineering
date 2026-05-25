@@ -68,7 +68,7 @@ docker run --rm -it --network host \
   -e MIELE_ZNP_HOST=192.168.xxx.xxx \
   -e MIELE_ZNP_PORT=xxx \
   -e MIELE_TARGET_NWK=0x537D \
-  -e MQTT_HOST=192.168.178.56 \
+  -e MQTT_HOST=192.168.xxx.xxx \
   -e MQTT_USER='your mqtt User' \
   -e MQTT_PASS='your-password' \
   python:3.12-alpine \
