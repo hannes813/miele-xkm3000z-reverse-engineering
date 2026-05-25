@@ -1,5 +1,11 @@
 # Miele XKM3000Z Local Zigbee Bridge for Home Assistant
 
+## Documentation
+
+- [Full protocol documentation](docs/Miele_XKM3000Z_Protokoll_Dokumentation_final.md)
+- [Home Assistant examples](homeassistant/)
+- [Docker example](examples/docker-run.sh)
+
 Reverse-engineered local integration for older Miele washing machines with XKM3000Z Zigbee communication module, tested with a Miele WPS 820 generation appliance.
 
 This repository focuses only on the Miele XKM3000Z module, its local Zigbee telemetry, selected write experiments, MQTT publishing, and Home Assistant discovery. It intentionally does not cover any separate smart-home gateway migration topic.
