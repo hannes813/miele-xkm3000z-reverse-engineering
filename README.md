@@ -88,10 +88,10 @@ Example:
 ```bash
 docker run --rm -it --network host \
   -v /volume2/docker/zigbee2mqtt:/work \
-  -e MIELE_ZNP_HOST=192.168.xxx.xxx \
-  -e MIELE_ZNP_PORT=xxx \
+  -e MIELE_ZNP_HOST=1'xx'.'xxx'.'xxx'.'xxx' \
+  -e MIELE_ZNP_PORT='xxxx' \
   -e MIELE_TARGET_NWK=0x537D \
-  -e MQTT_HOST=192.168.xxx.xxx \
+  -e MQTT_HOST=1'xx'.'xxx'.'xxx'.'xxx' \
   -e MQTT_USER='your mqtt User' \
   -e MQTT_PASS='your-password' \
   python:3.12-alpine \
@@ -102,12 +102,12 @@ docker run --rm -it --network host \
 
 | Variable | Default | Meaning |
 |---|---:|---|
-| `MIELE_ZNP_HOST` | `192.168.xxx.xxx` | TCP host of the ZNP adapter |
-| `MIELE_ZNP_PORT` | `xxxx` | TCP port of the ZNP adapter |
+| `MIELE_ZNP_HOST` | `1'xx'.'xxx'.'xxx'.'xxx'` | TCP host of the ZNP adapter |
+| `MIELE_ZNP_PORT` | `'xxxx'` | TCP port of the ZNP adapter |
 | `MIELE_TARGET_NWK` | `0x537D` | Zigbee NWK address of the Miele module |
-| `MQTT_HOST` | `192.168.xxx.xx` | MQTT broker host |
-| `MQTT_USER` | empty | MQTT username |
-| `MQTT_PASS` | empty | MQTT password |
+| `MQTT_HOST` | `1'xx'.'xxx'.'xxx'.'xxx'` | MQTT broker host |
+| `MQTT_USER` | 'User' | MQTT username |
+| `MQTT_PASS` | 'Password' | MQTT password |
 | `MQTT_BASE` | `miele_xkm3000z` | MQTT topic base |
 | `MIELE_POLL_INTERVAL` | `30` | Poll interval in seconds |
 | `MIELE_ENABLE_TIME_SYNC` | `true` | Enable Zigbee Time Cluster sync |
