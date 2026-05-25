@@ -43,8 +43,8 @@ import socket
 import struct
 from datetime import datetime
 
-ZNP_HOST = os.getenv("ZNP_HOST", "192.168.178.101")
-ZNP_PORT = int(os.getenv("ZNP_PORT", "6638"))
+ZNP_HOST = os.getenv("ZNP_HOST", "192.168.xxx.xxx")
+ZNP_PORT = int(os.getenv("ZNP_PORT", "xxxx"))
 TARGET_NWK = int(os.getenv("TARGET_NWK", "0x537D"), 0)
 
 PROFILE_ID = 0xC51E
