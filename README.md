@@ -6,6 +6,28 @@
 - [Home Assistant examples](homeassistant/)
 - [Docker example](examples/docker-run.sh)
 
+## Documentation
+
+- [Full protocol documentation](docs/miele-xkm3000z-protocol.md)
+- [Home Assistant examples](homeassistant/)
+- [Docker example](examples/docker-run.sh)
+
+---
+
+## Screenshots
+
+### Reverse engineering environment
+
+![Reverse Engineering Setup](docs/images/WPS_820_HomeAssistant_1.jpg)
+
+### Home Assistant Dashboard
+
+![Home Assistant](docs/images/WPS_820_HomeAssistant_4.png)
+
+### Zigbee Traffic
+
+![Zigbee Traffic](docs/images/Zigbee_Rohdaten.jp)
+
 Reverse-engineered local integration for older Miele washing machines with XKM3000Z Zigbee communication module, tested with a Miele WPS 820 generation appliance.
 
 This repository focuses only on the Miele XKM3000Z module, its local Zigbee telemetry, selected write experiments, MQTT publishing, and Home Assistant discovery. It intentionally does not cover any separate smart-home gateway migration topic.
