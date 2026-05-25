@@ -7,15 +7,15 @@ This repository focuses only on the Miele XKM3000Z module, its local Zigbee tele
 ## Architecture
 
 ```mermaid
-flowchart TD
+flowchart LR
 
-A[Miele WPS 820] --> B[Miele XKM3000Z]
-B --> C[SLZB-06 / TI ZNP]
+A[Miele Washing Machine] --> B[XKM3000Z]
+B --> C[SLZB-06<br/>TI ZNP Adapter]
 C --> D[Python MQTT Bridge]
 D --> E[MQTT Broker]
 E --> F[Home Assistant]
 
-F --> G[Status Sensors]
+F --> G[Dashboard]
 F --> H[Automations]
 F --> I[Notifications]
 ```
