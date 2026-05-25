@@ -880,7 +880,7 @@ Firmware-String: 00.51  E0001xxxxxxxx 00  XKM3000Z  09731580
 
 ## 20. Technisches Fazit
 
-Das XKM3000Z implementiert intern ein deutlich umfangreicheres Diagnose- und Servicemodell als über Zigbee offen exportiert wird.
+Die WMF 820 WPS implementiert intern ein deutlich umfangreicheres Diagnose- und Servicemodell als über Zigbee - des XKM 3000 Z - offen exportiert wird.
 
 Die Zigbee-Schnittstelle liefert:
 
@@ -907,8 +907,8 @@ Nicht exportiert werden:
 Die Architektur ist technisch leistungsfähig sowie deutlich leistungsfähiger als viele moderne Cloud-APIs.,
 aber bewusst auf reduzierte Remote-Diagnose und begrenzte Steuerbarkeit limitiert.
 
-Die eigentliche Einschränkung liegt nicht im Zigbee-Transport, sondern:
+Die eigentliche Einschränkung liegt nicht im Zigbee-Transport des XKM 3000 Z, sondern:
 
-in der Maschinenfirmware
-den freigegebenen Schreibfunktionen
-den von Miele bewusst nicht exportierten Parametern.
+- in der Maschinenfirmware
+- den freigegebenen Schreibfunktionen
+- den von Miele bewusst nicht exportierten Parametern
