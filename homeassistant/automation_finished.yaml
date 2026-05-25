@@ -1,0 +1,22 @@
+alias: Miele Waschmaschine fertig melden
+mode: single
+trigger:
+  - platform: state
+    entity_id: sensor.miele_waschmaschine_xkm3000z_status
+    to: finished
+action:
+  - service: notify.telegram
+    data:
+      message: "Die Waschmaschine ist fertig."
+  - service: media_player.volume_set
+    target:
+      entity_id: media_player.wohnzimmer
+    data:
+      volume_level: 0.35
+  - service: tts.speak
+    target:
+      entity_id: tts.google_translate_de_com
+    data:
+      cache: true
+      media_player_entity_id: media_player.wohnzimmer
+      message: "Die Waschmaschine ist fertig."
