@@ -4,21 +4,6 @@ Reverse-engineered local integration for older Miele washing machines with XKM30
 
 This repository focuses only on the Miele XKM3000Z module, its local Zigbee telemetry, selected write experiments, MQTT publishing, and Home Assistant discovery. It intentionally does not cover any separate smart-home gateway migration topic.
 
-## Architecture
-
-```mermaid
-flowchart LR
-
-A[Miele Washing Machine] --> B[XKM3000Z]
-B --> C[SLZB-06<br/>TI ZNP Adapter]
-C --> D[Python MQTT Bridge]
-D --> E[MQTT Broker]
-E --> F[Home Assistant]
-
-F --> G[Dashboard]
-F --> H[Automations]
-F --> I[Notifications]
-```
 
 ## Current status
 
@@ -55,6 +40,20 @@ TI ZNP adapter / TCP serial bridge
 Python bridge
         │ MQTT
 Home Assistant MQTT discovery
+```
+
+```mermaid
+flowchart LR
+
+A[Miele Washing Machine] --> B[XKM3000Z]
+B --> C[SLZB-06<br/>TI ZNP Adapter]
+C --> D[Python MQTT Bridge]
+D --> E[MQTT Broker]
+E --> F[Home Assistant]
+
+F --> G[Dashboard]
+F --> H[Automations]
+F --> I[Notifications]
 ```
 
 ## Quick start
