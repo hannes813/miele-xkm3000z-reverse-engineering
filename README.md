@@ -102,11 +102,11 @@ docker run --rm -it --network host \
 
 | Variable | Default | Meaning |
 |---|---:|---|
-| `MIELE_ZNP_HOST` | `192.168.178.101` | TCP host of the ZNP adapter |
-| `MIELE_ZNP_PORT` | `6638` | TCP port of the ZNP adapter |
+| `MIELE_ZNP_HOST` | `192.168.xxx.xxx` | TCP host of the ZNP adapter |
+| `MIELE_ZNP_PORT` | `xxxx` | TCP port of the ZNP adapter |
 | `MIELE_TARGET_NWK` | `0x537D` | Zigbee NWK address of the Miele module |
-| `MQTT_HOST` | `192.168.178.56` | MQTT broker host |
-| `MQTT_USER` | `mqtt` | MQTT username |
+| `MQTT_HOST` | `192.168.xxx.xx` | MQTT broker host |
+| `MQTT_USER` | empty | MQTT username |
 | `MQTT_PASS` | empty | MQTT password |
 | `MQTT_BASE` | `miele_xkm3000z` | MQTT topic base |
 | `MIELE_POLL_INTERVAL` | `30` | Poll interval in seconds |
