@@ -58,13 +58,13 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 # 01 - USER CONFIG
 # ============================================================
 
-HOST = os.getenv("MIELE_ZNP_HOST", "192.168.178.101")
+HOST = os.getenv("MIELE_ZNP_HOST", "192.168.xxx.xxx")
 PORT = int(os.getenv("MIELE_ZNP_PORT", "6638"))
 TARGET_NWK = int(os.getenv("MIELE_TARGET_NWK", "0x537D"), 0)
 
-MQTT_HOST = os.getenv("MQTT_HOST", "192.168.178.56")
-MQTT_USER = os.getenv("MQTT_USER", "mqtt")
-MQTT_PASS = os.getenv("MQTT_PASS", "")
+MQTT_HOST = os.getenv("MQTT_HOST", "192.168.xxx.xx")
+MQTT_USER = os.getenv("MQTT_USER", "Dein User")
+MQTT_PASS = os.getenv("MQTT_PASS", "Dein Passwort")
 MQTT_BASE = os.getenv("MQTT_BASE", "miele_xkm3000z")
 
 PROFILE_ID = 0xC51E
