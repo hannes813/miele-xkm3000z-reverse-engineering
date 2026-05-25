@@ -49,8 +49,8 @@ from typing import Optional, Tuple
 # 01 - CONNECTION / DEVICE SETTINGS
 # ============================================================
 
-HOST = "192.168.178.101"
-PORT = 6638
+HOST = "192.168.xxx.xxx"
+PORT = xxxx
 TARGET_NWK = 0x537D
 
 PROFILE_ID = 0xC51E
