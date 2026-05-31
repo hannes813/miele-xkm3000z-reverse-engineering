@@ -21,7 +21,7 @@ This repository focuses only on the Miele XKM3000Z module, its local Zigbee tele
 
 ### Home Assistant Dashboard
 
-![Home Assistant](docs/images/WPS_820_HomeAssistant_4.png)
+![Home Assistant](docs/images/WPS_820_HomeAssistant_2.png)
 
 ### Zigbee Traffic
 
